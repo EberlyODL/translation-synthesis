@@ -1,0 +1,16 @@
+{
+  "name": "translation-synthesis",
+  "main": "translation-synthesis.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.9.0",
+    "lrndesign-animationctrl": "https://github.com/LRNWebComponents/lrndesign-animationctrl.git#^0.0.2",
+    "iron-pages": "PolymerElements/iron-pages#^2.0.0",
+    "paper-stepper": "Collaborne/paper-stepper#^2.1.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "web-component-tester": "Polymer/web-component-tester#^6.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  }
+}
