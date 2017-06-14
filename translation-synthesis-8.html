@@ -14,7 +14,8 @@
             <lrndesign-animationctrl-button name="replay" icon="media"></lrndesign-animationctrl-button>
         </lrndesign-animationctrl>
 
-        <p>Termination occurs when the complex reaches the termination sequence (a stop codon). At this point the ribosome binds to realease protein instead of a tRNA molecule and the entire complex fall apsrt.</p>
+        <p>Termination occurs when the complex reaches the termination sequence (a stop codon). At this point the ribosome binds
+            to realease protein instead of a tRNA molecule and the entire complex fall apsrt.</p>
 
         <svg id="translations" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 635.97 257.99">
             <defs>
@@ -576,12 +577,19 @@
                 var yellowthing = svg.getElementById('yellowthing');
                 var peptidebondtext = svg.getElementById('peptidebondtext');
                 var rectangle = svg.getElementById('rectangle');
+                var topblob = svg.getElementById('topblob');
+                var bottomblob = svg.getElementById('bottomblob');
 
                 // Set Animate
-                tl.set([tubesetone, tubesettwo, fiveside, yellowthing, barfour, peptidebondtext, rectangle, tubesetfive], {
+                tl.set([tubesetone, tubesettwo, fiveside, yellowthing, barfour, peptidebondtext, rectangle,
+                        tubesetfive
+                    ], {
                         alpha: 0
                     })
-                    .set([bottomrow, tubesetone, tubesettwo, tubesetthree, hexagon, fiveside, fourpoint,
+                    .set([tubesetfive, fiveside, yellowthing], {
+                        y: "-=100"
+                    })
+                    .set([bottomrow, tubesetone, tubesettwo, hexagon, tubesetthree, fourpoint,
                         eightpoint, barone, bartwo, barthree
                     ], {
                         x: "-=80"
@@ -596,9 +604,59 @@
                         y: "-140",
                         transformOrigin: "50% 50%",
                         alpha: 0
+                    })
+                    .set([barfour], {
+                        x: "-=120"
                     });
 
                 // Start Animate
+                tl.to([bottomrow, tubesetone, tubesettwo, tubesetthree, tubesetfour, star, hexagon,
+                        fourpoint,
+                        eightpoint, barone, bartwo, barthree
+                    ], .5, {
+                        x: "-=40"
+                    })
+                    .to([tubesetthree], 1.5, {
+                        x: "-=100",
+                        y: "-=100",
+                        alpha: 0
+                    })
+                    .to([tubesetfive, fiveside], 1, {
+                        x: "-=120",
+                        y: "+=100",
+                        alpha: 1
+                    })
+                    .to([barfour], .5, {
+                        alpha: 1
+                    })
+                    .to([bottomrow, tubesetone, tubesettwo, tubesetthree, tubesetfour, tubesetfive,
+                        fiveside, star, hexagon, fourpoint,
+                        eightpoint, barone, bartwo, barthree, barfour
+                    ], .5, {
+                        x: "-=40"
+                    })
+                    .to([tubesetfour], 1.5, {
+                        x: "-=100",
+                        y: "-=100",
+                        alpha: 0
+                    })
+                    .to([yellowthing], 1.5, {
+                        x: "-=150",
+                        y: "+=120",
+                        alpha: 1
+                    })
+                    .to([yellowthing, topblob, ], 1, {
+                        y: "-=40",
+                        alpha: .8
+                    })
+                    .to([tubesetfive], 1, {
+                        y: "-=5",
+                        x: "-=20",
+                        alpha: .8
+                    })
+                    .to([bottomblob], 1, {
+                        y: "+=10"
+                    });
 
                 tl.pause();
 

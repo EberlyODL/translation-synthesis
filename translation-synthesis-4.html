@@ -14,9 +14,9 @@
             <lrndesign-animationctrl-button name="replay" icon="media"></lrndesign-animationctrl-button>
         </lrndesign-animationctrl>
 
-        <p>The first event in translation is initiation - the attachment of the ribosomal subunits to the molecule of mRNA. First,
-            the small ribosomal subunit binds to the mRNA. The 5' cap on the molecule of mRNA serves as the attachment site.
-            A molecule of tRNA binds to the initiation codon.</p>
+        <p>The first event in translation is initiation - the attachment of the ribosomal subunits to the molecule of mRNA.
+            First, the small ribosomal subunit binds to the mRNA. The 5' cap on the molecule of mRNA serves as the attachment
+            site. A molecule of tRNA binds to the initiation codon.</p>
 
         <svg id="translations" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 635.97 257.99">
             <defs>
@@ -363,28 +363,28 @@
 
                 // Set Animate
                 tl.set([bottomblob, tubesetone, hexagon], {
-                    alpha: 0
-                })
-                .set([tubesetone, hexagon], {
-                    y: "-=200",
-                    x: "-=200"
-                })
-                .set([bottomblob], {
-                    y: "+=100",
-                    x: "-=100"
-                });
+                        alpha: 0
+                    })
+                    .set([tubesetone, hexagon], {
+                        y: "-=200",
+                        x: "-=200"
+                    })
+                    .set([bottomblob], {
+                        y: "+=100",
+                        x: "-=100"
+                    });
 
                 // Start Animate
                 tl.to([bottomblob], 1, {
-                    y: "-=100",
-                    x: "+=100",
-                    alpha: 1
-                })
-                .to([tubesetone, hexagon], 1, {
-                    y: "+=200",
-                    x: "+=200",
-                    alpha: 1
-                });
+                        y: "-=100",
+                        x: "+=100",
+                        alpha: 1
+                    })
+                    .to([tubesetone, hexagon], 1, {
+                        y: "+=200",
+                        x: "+=200",
+                        alpha: 1
+                    });
 
                 tl.pause();
 
