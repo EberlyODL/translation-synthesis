@@ -6,7 +6,9 @@
     "lrndesign-animationctrl": "https://github.com/LRNWebComponents/lrndesign-animationctrl.git#^0.0.2",
     "iron-pages": "PolymerElements/iron-pages#^2.0.0",
     "paper-stepper": "Collaborne/paper-stepper#^2.1.0",
-    "lrn-icons": "https://github.com/LRNWebComponents/lrn-icons.git#^1.0.12"
+    "lrn-icons": "https://github.com/LRNWebComponents/lrn-icons.git#^1.0.12",
+    "bower": "*",
+    "install": "^1.0.4"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
