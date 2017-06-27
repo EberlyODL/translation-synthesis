@@ -1,5 +1,6 @@
 <link rel="import" href="../lrndesign-animationctrl/lrndesign-animationctrl.html">
 <link rel="import" href="../greensock-cdn/greensock-cdn.html">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 <dom-module id="translation-synthesis-6">
     <template>
@@ -7,13 +8,30 @@
              :host {
                 display: block;
             }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: 'Open Sans', sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                color: #6D6E71;
+                text-align: center;
+            }
+
+            p {
+                font-family: 'Open Sans', sans-serif;
+            }
         </style>
 
         <lrndesign-animationctrl>
             <lrndesign-animationctrl-button name="play" icon="play"></lrndesign-animationctrl-button>
             <lrndesign-animationctrl-button name="replay" icon="replay"></lrndesign-animationctrl-button>
         </lrndesign-animationctrl>
-
+        <h1>Translation</h1>
         <p>The next event in translation is elongation. During this phase amino acids are added to the first amino acid to produce
             a chain of amino acids known as a polypeptide. The sequence of amino acids along the strand of mRNA provides
             the information for the order in which amno acids are attached. Each sequence of 3 base pairs codes for a particular
