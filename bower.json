@@ -9,7 +9,8 @@
     "bower": "*",
     "install": "^1.0.4",
     "lrndesign-animationctrl": "LRNWebComponents/lrndesign-animationctrl#^0.0.2",
-    "greensock-cdn": "EberlyODl/greensock#^0.0.1"
+    "greensock-cdn": "EberlyODl/greensock#^0.0.1",
+    "animation-shared-styles": "EberlyODL/animation-shared-styles#master"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
